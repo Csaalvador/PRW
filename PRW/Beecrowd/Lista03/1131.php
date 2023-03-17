@@ -1,17 +1,16 @@
 <?php
 
-//Inicia com o valores em 0
 $grenais = 0; 
 $vitoriasInter = 0; 
 $vitoriasGremio = 0;
 $empates = 0;
 
 do { 
-    list($golsInter, $golsGremio) = explode(" ", readline()); //extrutura de repetição
+    list($golsInter, $golsGremio) = explode(" ", readline()); 
 
-    $grenais++; //contador
-    if ($golsInter > $golsGremio) {//condição
-        $vitoriasInter++;//contador
+    $grenais++; 
+    if ($golsInter > $golsGremio) {
+        $vitoriasInter++;
     } elseif ($golsGremio > $golsInter) {
         $vitoriasGremio++;
     } else {

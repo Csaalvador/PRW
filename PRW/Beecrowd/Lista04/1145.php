@@ -1,9 +1,18 @@
 <?php
-$x = explode (" ", fgets (STDIN));
+$entrada = readline();
+$entrada = explode(" ", $entrada);
 
-for($y = 1 to ($x){
-    echo ($y);
+$x = $entrada[0];
+$y = $entrada[1];
 
+for ($i = 1; $i <= $y; $i++) {
+    echo $i;
+
+
+    if ($i % $x == 0 || $i == $y) {
+        echo "\n";
+    } else {
+        echo " ";
+    }
 }
-
 ?>
