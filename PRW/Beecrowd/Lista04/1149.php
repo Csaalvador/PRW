@@ -1,11 +1,19 @@
 <?php
 
-$entrada = readline();
-$entrada = explode(" ", $entrada);
+$entrada = explode(" ", fgets(STDIN));
 
-$a = $entrada[0];
-$n = $entrada[1];
+$n = intval($entrada[count($entrada) - 1]); // pega o ultimo valor do array
+$a = intval($entrada[0]); // pega o primeiro valor do array
 
-for($i = 0; $i <= $n; $i++){
-    $a = $a * 2;
+if($n < 0 || $n == 0){
+        $n = readline();
+    }
+
+$soma = 0;
+for($i = 0; $i < $n; $i++){
+    $soma += $a + $i; //
 }
+
+echo $soma . PHP_EOL;
+
+?>
