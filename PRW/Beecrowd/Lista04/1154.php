@@ -16,6 +16,9 @@ while ($idade >= 0) {
 
 $media = $soma / $cont;
 
+$media = number_format($media, 2, ".", " ");
+
+
 echo "$media\n";
 
 ?>
