@@ -232,5 +232,15 @@ if (ctype_lower($nome)) {
 
 
 
+//insset() - verifica se uma string está contida em outra
+$mensagem = "Olá mundo!";
+if (strpos($mensagem, "mundo") !== false) {
+    echo "A string está contida";
+} else {
+    echo "A string não está contida";
+}
+//No código acima, verificamos se a string “mundo” está contida na string “Olá mundo!”. Como está, o retorno será “A string está contida”.
+
+
 
 ?>
