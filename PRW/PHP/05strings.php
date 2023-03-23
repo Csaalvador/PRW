@@ -242,5 +242,12 @@ if (strpos($mensagem, "mundo") !== false) {
 //No código acima, verificamos se a string “mundo” está contida na string “Olá mundo!”. Como está, o retorno será “A string está contida”.
 
 
+//preg_match - verifica se uma string está contida em outra
+$mensagem = "Olá mundo!";
+if (preg_match("/mundo/", $mensagem)) {
+    echo "A string está contida";
+} else {
+    echo "A string não está contida";
+}
 
 ?>

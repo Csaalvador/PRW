@@ -78,6 +78,27 @@ foreach($carros as $indice => $valor){
     echo $indice . "=>" . $valor . "<br>";
 }
 
+//como ler valores de um teclado e adicionar em uma array flexivel
+$frutas = array();
+
+for($i = 0; $i < 4; $i++){
+    echo "Digite uma fruta: ";
+    $fruta = (string) fgets(STDIN);
+    $frutas[] = $fruta;
+}
+
+//array unique - remove elementos repetidos de uma array
+$frutas = array("laranja", "abacaxi", "melancia", "laranja", "laranja");
+print_r(array_unique($frutas));
+
+
+//array push - adiciona um ou mais elementos no final de uma array e retorna o número de elementos 
+$frutas = array("laranja", "abacaxi", "melancia");
+array_push($frutas, "banana", "morango");
+print_r($frutas);
+
+
+
 
 
 
