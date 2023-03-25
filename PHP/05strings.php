@@ -221,17 +221,6 @@ if (ctype_upper($nome)) {
 
 
 
-//USANDO CTYPEUPPER E CTYPELOWER
-$nome = "LINHA DE CÓDIGO";
-if (ctype_lower($nome)) {
-    echo "A string está em minúsculo";
-} else {
-    echo "A string não está em minúsculo";
-}
-//No código acima, verificamos se a string está em minúsculo. Como não está, o retorno será “A string não está em minúsculo”.
-
-
-
 //insset() - verifica se uma string está contida em outra
 $mensagem = "Olá mundo!";
 if (strpos($mensagem, "mundo") !== false) {
