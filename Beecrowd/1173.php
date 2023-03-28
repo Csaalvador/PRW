@@ -1,17 +1,13 @@
 <?php
-$vetor = explode(" ", fgets(STDIN));
-$vetor = array();
-$n = readline();
 
-//colocando n no primeiro indice do vetor
-$vetor[0] = $n;
-
-//colocando os valores no vetor
-for($i = 1; $i < $n; $i++){
-    $vetor[$i] = $vetor[$i-1] * 2;
+// Leitura do vetor A
+for ($i = 0; $i < 100; $i++) {
+    $A[$i] = readline();
 }
 
-//imprimindo o vetor
-for($i = 0; $i < 10; $i++){
-    echo "N[".$i."] = ".$vetor[$i]. PHP_EOL;
+// Imprime as posições do vetor A onde o valor é menor ou igual a 10
+for ($i = 0; $i < 100; $i++) {
+    if ($A[$i] <= 10) {
+        printf("A[%d] = %.1f\n", $i, $A[$i]);
+    }
 }
