@@ -1,18 +1,15 @@
 <?php
 
+//apresentar o quadrado de numeros pares de 1 até n
 
-$n = intval(readline());    
-$vetor = array();
+$n = fgets(STDIN);
 
-//colocando n no primeiro indice do vetor
-$vetor[0] = $n;
+for ($i = 1; $i <= $n; $i++) {
 
-//colocando os valores no vetor
-for($i = 1; $i < 10; $i++){
-    $vetor[$i] = $vetor[$i-1] * 2;
-}
+    if ($i % 2 == 0) { //se o resto da divisão por 2 for igual a 0, então é par
 
-//imprimindo o vetor
-for($i = 0; $i < 10; $i++){
-    echo "N[".$i."] = ".$vetor[$i]. PHP_EOL;
+        $out = pow($i, 2); //eleva o numero ao quadrado
+        echo "$i^2 = $out" . PHP_EOL;
+
+    }
 }
