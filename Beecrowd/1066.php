@@ -1,6 +1,6 @@
 <?php
 
-//Pares, Ímpares, Positivos e Negativos
+//Pares,, Ímpares, Positivos e Negativos
 
 $A = (int) fgets(STDIN);
 $B = (int) fgets(STDIN);
