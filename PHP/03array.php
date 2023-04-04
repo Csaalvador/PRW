@@ -156,6 +156,17 @@ echo min($menor);
 $maior = array(2, 2, 2, 2, 2);
 echo max($maior);
 
+//seleciona o menor valor de uma array
+$menor = array(2, 2, 2, 2, 2);
+echo array_search(min($menor), $menor);
+
+
+
+//mostra o menor elemento de uma array
+$menor = array(2, 2, 2, 2, 2);
+echo min($menor);
+
+
 
 
 
