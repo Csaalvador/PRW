@@ -8,28 +8,35 @@
   </head>
 
   <body>
-    <form action="01.php" method="post">
-      <h1>Escolha a opcão desejada</h1>
-      <hr />
+  
+    <form action="01.php" method="POST">
+      <h1>Escolha a Operação desejada</h1>
+      <hr>
 
-      <div>
-        <input type="checkbox" name="Somar" id="Somar" />
-        <label for="somar">Somar</label>
-        <input type="checkbox" name="Subtrair" id="Subtrair" />
-        <label for="subtrair">Subtrair</label>
-        <input type="checkbox" name="Dividir" id="Dividir" />
-        <label for="dividir">Dividir</label>
-        <input type="checkbox" name="Multiplicar" id="Multiplicar" />
-        <label for="multiplicar">Multiplicar</label>
+     <div>
+      <input type="radio" name="soma">
+      <label for="soma">Soma</label>
+
+      <input type="radio" name="sub">
+      <label for="sub">Subtração</label>
+
+      <input type="radio" name="mult">
+      <label for="mult">Multiplicação</label>
+
+      <input type="radio" name="div">
+      <label for="div">Divisão</label>
+
+ 
+    
       </div>
 
-   <div>
-      <label for="n1" id="n1">Numero 1:</label>
-      <input type="text" name="n1" id="n1" />
-      <br />
-      <label for="n2" id="n2">Numero 2:</label>
-      <input type="text" name="n2" id="n2" />
-</div>
+      <div>
+        <label for="n1" id="n1">Número 1:</label>
+        <input type="number" name="n1" id="n1" />
+        <br />
+        <label for="n2" id="n2">Número 2:</label>
+        <input type="number" name="n2" id="n2" />
+      </div>
       <button type="submit">Enviar</button>
     </form>
   </body>

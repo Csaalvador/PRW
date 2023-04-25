@@ -114,4 +114,4 @@ if ($estado == "São Paulo") {
 
 ?>
 <br>
-<a href='formulario.html'><button>Voltar</button></a>
+<a href='ex03.html'><button>Voltar</button></a>
