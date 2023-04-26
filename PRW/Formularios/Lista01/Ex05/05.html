@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms4</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(0, 0, 0.8), rgb(0, 0, 0.2));
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        fieldset {
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        legend {
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 2px solid white;
+            padding: 5px;
+            background-color: rgb(0, 0, 0.8);
+            color: white;
+        }
+
+        button {
+            border-radius: 5px;
+            border: 2px solid white;
+            padding: 5px;
+            background-color: rgb(0, 0, 0.8);
+            color: white;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
- <form action="05.php" method="GET">
-    <h1>Calcular base</h1>
 
-    <label for="n1">Base</label>
-    <input type="number" name="n1">
+    <div class="box">
+        <form action="05.php">
+            <fieldset>
+                <legend><b> Calcular area do triangulo</b></legend>
+                <div>
+                    <label for="base">Base</label> <br>
+                    <input type="number" name="n1" id="base" placeholder="Base do triângulo">
+                    <br><br>
+                    <label for="altura">Altura</label> <br>
+                    <input type="number" name="n2" id="altura" placeholder="Altura do triângulo">
+                </div>
+                <div>
+                    <br>
+                    <button type="submit">Enviar</button>
 
-<label for="n2">Altura</label>
-    <input type="number" name="n2">
+                    <!--Button para limpar-->
+                    <button type="reset">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
-    <button type="submit">Enviar</button>
-
-
- </form>
 </body>
+
 </html>
