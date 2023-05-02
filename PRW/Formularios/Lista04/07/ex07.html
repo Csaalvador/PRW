@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+        legend{
+            text-align: center;
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .idade{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+     
+
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>Dias de vida</legend>
+    <form action="ex07.php" method="post">
+        <div class="name">
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
+        </div>
+        <div class="idade">
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+        </div>
+        <div class="submit">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</fieldset>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+        legend{
+            text-align: center;
+        }
+        .numb{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <fieldset>
+            <legend>
+                Tabuada
+            </legend>
+            <form action="ex08.php" method="post">
+                <div class="numb">
+                    <label for="select">Selecione o número: </label>
+                    <select name="select" id="select">
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                    </select>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
